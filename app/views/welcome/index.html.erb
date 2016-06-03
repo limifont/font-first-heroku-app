@@ -3,7 +3,7 @@
 
 <div class="row">
   <% @animals.each do |animal| %>
-      <div class="col s12 m3">
+      <div class="col s12 m6">
         <div class="card indigo darken-4">
           <div class="card-content white-text">
             <span class="card-title"><%= animal.name %></span>
@@ -20,3 +20,5 @@
       </div>
   <% end %>
 </div>
+
+<%= will_paginate @animals %>

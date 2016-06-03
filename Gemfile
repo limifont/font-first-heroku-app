@@ -33,6 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'will_paginate', '~> 3.1.0'
+
 group :production do
   gem 'puma'
 end
