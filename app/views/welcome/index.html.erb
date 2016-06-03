@@ -1,24 +1,26 @@
-<h1 class="center">Hello World! - Heroku</h1>
-<hr />
+<div class="container">
+  <h1 class="center">Hello World! - Heroku</h1>
+  <hr />
 
-<div class="row">
-  <% @animals.each do |animal| %>
-      <div class="col s12 m6">
-        <div class="card indigo darken-4">
-          <div class="card-content white-text">
-            <span class="card-title"><%= animal.name %></span>
-            <ul>
-              <li><%= animal.gender %></li>
-              <li><%= animal.age %></li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
+  <div class="row">
+    <% @animals.each do |animal| %>
+        <div class="col s12 m6">
+          <div class="card indigo darken-4">
+            <div class="card-content white-text">
+              <span class="card-title"><%= animal.name %></span>
+              <ul>
+                <li><%= animal.gender %></li>
+                <li><%= animal.age %></li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
           </div>
         </div>
-      </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
 
-<%= will_paginate @animals %>
+  <%= will_paginate @animals %>
+</div>
